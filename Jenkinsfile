@@ -18,7 +18,7 @@ pipeline {
 
         stage("build"){
             steps{
-                sh './mvnw clean package -DskipTests'
+                bat './mvnw clean package -DskipTests'
             }
         }
 
